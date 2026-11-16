@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Check if a word is a Palindrome.">
+        <title>Palindrome Checker</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=content_copy" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Is it a Palindrome?</h1>
+        </header>
+        <main class="main-container">
+            <aside class="description">
+                <p>
+                    A palindrome is a word or phrase that can be read the same way
+                    forwards and backwards, ignoring punctuation, case, and spacing.
+                </p>
+            </aside>
+            <section class="palindrome">
+                <p>Enter a text to check:</p>
+                <section class="check-palindrome">
+                    <input name="palindrome" type="text" id="text-input">
+                    <button type="button" id="check-btn">Check</button>
+                </section>
+                <p id="result"></p>
+            </section>
+            <h2>Words History</h2>
+            <section class="history">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>Texts/Words</th>
+                            <th>Is it Palindrome?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="first">
+                            <td colspan="3">No history</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; Palindrome Checker 2026. Created by Raymond.</p>
+        </footer>
+    </body>
+    <script src="main.js"></script>
+
+</html>
