@@ -3,6 +3,10 @@
 A small web page that tells you whether a word or phrase is a palindrome. A palindrome reads the same forwards and backwards, like "racecar" or "A man, a plan, a canal: Panama".
  
 I built it to practise JavaScript string handling, DOM events and the Clipboard API.
+
+## Live Link
+
+[https://palindrome-checker-nine-kappa.vercel.app/](https://palindrome-checker-nine-kappa.vercel.app)
  
 ## How to use it
  
