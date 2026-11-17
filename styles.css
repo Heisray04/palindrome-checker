@@ -17,21 +17,6 @@ html { font-size: 14px; }
 }
 
 .material-symbols-outlined:hover { color: blue; }
-.copied-feedback {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    padding: 0.5rem 0.8rem;
-    color: rgb(160, 11, 11);
-    background-color: rgb(205, 226, 235);
-    border-radius: 5px;
-    animation: moving-copied-text 3s ease-out 0.5s;
-}
-
-@keyframes moving-copied-text {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(150%); }
-}
 
 body {
     width: 100%;
@@ -50,7 +35,7 @@ body {
         rgb(255, 193, 77) 100%
     );
     background-size: 300% 300%;
-    /* animation: change-bgcolor 6s linear infinite; */
+    animation: change-bgcolor 6s linear infinite;
 }
 
 @keyframes change-bgcolor {
@@ -140,11 +125,31 @@ h1 { font-size: 2.2rem; padding: 1rem; }
     margin-bottom: 1rem;
 }
 
+.copied-feedback {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 0.8rem;
+    font-weight: 600;
+    background-color: rgb(205, 226, 235);
+    border-radius: 5px;
+    transform: translate(200%);
+    animation: moving-copied-text 5s ease-in 0.3s;
+    z-index: 2;
+}
+
+@keyframes moving-copied-text {
+    0%, 70% { transform: translate(0); }
+    100% { transform: translateX(200%); }
+}
+
 .history table {
     border: 1px solid #ccc;
     border-collapse: collapse;
     width: 100%;
 }
+
+button.copy-btn { border: none; background-color: transparent; }
 
 h2 {
     margin-bottom: 0.2rem;
@@ -174,6 +179,7 @@ th, td { padding: 0.5rem; }
 footer { margin-top: auto; }
 
 @media (min-width: 480px) {
+    /* Phone with wider screens and mini to medium-sized tablets */
     html { font-size: 15px; }
 
     .palindrome, .history {
@@ -186,11 +192,10 @@ footer { margin-top: auto; }
 }
 
 @media (min-width: 768px) {
+    /* Wider tablets and desktop view */
     html { font-size: 16px; }
 
-    .description, .palindrome, .history {
-        margin: 2rem auto;
-    }
+    .description, .palindrome, .history { margin: 2rem auto; }
 
     h2 { margin: 0 0 -1rem; }
 
