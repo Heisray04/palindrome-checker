@@ -6,7 +6,7 @@ I built it to practise JavaScript string handling, DOM events and the Clipboard 
 
 ## Live Link
 
-[https://palindrome-checker-nine-kappa.vercel.app/](https://palindrome-checker-nine-kappa.vercel.app)
+[https://palindrome-checker-heisray.vercel.app/](https://palindrome-checker-heisray.vercel.app)
  
 ## How to use it
  
